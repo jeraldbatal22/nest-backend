@@ -8,7 +8,7 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'http://localhost:3000', // allow your Next.js app
+    origin: ['http://localhost:3000', 'https://jv-live-web-version.vercel.app'], // allow your Next.js app
     // methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     // allowedHeaders: ['Content-Type', 'Authorization'],
     // credentials: true, // if you need cookies or auth headers
